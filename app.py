@@ -2,7 +2,7 @@ import random
 import streamlit as st
 
 st.set_page_config(
-    page_title="Common Ground",
+    page_title="Ambolt Family Herd Mentality",
     page_icon="🐄",
     layout="centered",
 )
