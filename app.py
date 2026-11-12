@@ -189,7 +189,7 @@ if "current" not in st.session_state:
 if "history" not in st.session_state:
     st.session_state.history = []
 
-st.title("🐄 Common Ground")
+st.title("🐄 Ambolt Family Herd Mentality by Fatha")
 st.caption("A quick-fire party game about guessing what everyone else will say.")
 
 with st.sidebar:
