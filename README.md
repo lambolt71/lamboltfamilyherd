@@ -1,7 +1,12 @@
-# Common Ground — Streamlit party-question app
+# Common Ground — Streamlit party game
 
-A simple party game built around everyday questions. Players try to predict the
-answer that most other people in the group will give.
+A party game where players try to predict the answer most other people will give.
+
+## Files
+
+- `app.py` — Streamlit application
+- `questions.csv` — editable question bank
+- `requirements.txt` — Python dependencies
 
 ## Run locally
 
@@ -16,22 +21,23 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Deploy from GitHub
+## Deploy on Streamlit Community Cloud
 
-1. Create a GitHub repository.
-2. Upload `app.py`, `requirements.txt`, and this `README.md`.
-3. In Streamlit Community Cloud, choose **New app**.
-4. Select the repository, branch, and `app.py` as the entry point.
-5. Deploy.
+1. Upload `app.py`, `questions.csv`, `requirements.txt`, and `README.md` to the same folder in your GitHub repository.
+2. In Streamlit Community Cloud, create an app from that repository.
+3. Set `app.py` as the app entry point.
+4. Deploy.
 
-## What's included
+## Editing questions
 
-- 1,000 original question prompts across 10 everyday categories.
-- Random question selection.
-- No-repeat selection until the current category's questions have been used.
-- Previous-question navigation.
-- A browsable question bank.
-- Reset button for a new session.
+Edit `questions.csv` directly in GitHub. Keep the three columns:
 
-The question bank is generated from 100 everyday topics and 10 alternative
-prompt styles. The questions are not copied from Herd Mentality.
+`question,category,difficulty`
+
+Allowed difficulty labels are `Easy` and `Medium`, but you can add your own labels. The app reads the CSV at startup and caches it based on the file's modification time.
+
+## Current bank
+
+1089 individually authored questions across 11 categories.
+
+The questions are original prompts inspired by the broad consensus-answer party-game format. They are not copied from Herd Mentality.
