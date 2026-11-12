@@ -5,12 +5,12 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(
-    page_title="Common Ground",
+    page_title="Ambolt Family Herd Mentality by Fatha",
     page_icon="🐄",
     layout="centered",
 )
 
-st.title("🐄 Common Ground")
+st.title("🐄 Ambolt Family Herd Mentality by Fatha")
 st.caption("A party game about guessing what everyone else will say.")
 
 QUESTION_FILE = Path(__file__).parent / "questions.csv"
